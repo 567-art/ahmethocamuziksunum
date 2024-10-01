@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Müzik Ödevi - Ahmet Şekeroğlu / Fatih Efe ÖZDEMİR 10B 490</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Google+Sans+Text:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="shortcut icon"
+        href="data:image/webp;base64,UklGRvwFAABXRUJQVlA4WAoAAAAQAAAANwAANwAAQUxQSJICAAARkDbbtmnHW9qxbfO+ipO2bdu2EX5q8/WrVNu2bds2w7ZeG/fVTZ3d3OecGxETAGLTcrZeeaYhY28vbsyp7Ar6DO236xVDspa3vn+glTTF+AaFPpusyPGdYkbhT42+EtrkoUyW38lGkOcWlP1ttq+Q4JtMGmoXkwSUyUc9fmnDl/IJdTnFnSsqD3U5A7g9bzBdTLfjcljDkJedGtuoVFRUcq3xp7X/sInA30lFTrMxGYilJj/7i5ls+MIeIf3H+kDgjFitIjOBwIlIf9MeBDY+v9FVQNQrknYmAoRagcjpSL4SDLoNzSe9igP99kQqGwY63kW6Djr2LCbV0VOpL5TboOfBSB3J5a8ooVExEVGhoTGKwWAwxBmUyJiYMCWulAOsoXw08PjnIZkxZCUlFlVj2jc1Hc5TTlnxxHykcS6Fp5SZwBulSdgIFko2V4wq4RggtR9X3A8JZ2m9+VQpFko2V4qMM/CMMoMr4YeEU3CWcsqGp9QnCcdgI8UczKOYJWyEdAqm80D6/sVTpphMubnTp8+YPm/9E0aYAXGkm1y8pUgdAN5TsJqcdkhkSQCbSNflHCJ5AbQhYTcZFZF6BQDc35AsgeLsz5CGAgAYSXjbVdg0pL7y/cunhIQPg8VYZSN5JvzTRMOP9UV4mhjpU9K/As00ZEYvHvc6lxiSt8B/W3MgfsxNtiKENj/yDenmlP/BJh5E9Vh2vZS4hPINR+16yZA3HYiud7j+Zl++fEeRx2woYCgWITo/AujKM728rwe88Xn6MLcD/sgrenjVAUS6LZZ3syyItWr3Uo62wgeE+5teimNHKoPUSON7Meq+RnYgO6Lrlhc/aMx8MUexAl36Vh4wfV/xtx+qJe/YOmO7OBAKVlA4IEQDAACwEgCdASo4ADgAPjEMjEYiEREKgCADBLYG2AHFxOY5D+Kv8A/ar5T6l/Qvvx+53+U5GpDPVt+O/LD28f1X8gPlF5gH6Q/3L8u+075gP1r/Wb3xekA/s38r9KP2EfQA8r39svgu/a3/q/5n2iU9rLA0rjMO7jET6xWGdZxVJK5qG9f9uJDbMBhIFQMeT9G4ZzpMt87dIYySXRVKJEHgAAD+9CK5AN75+UOR/3e6oAb0lWWAbmmyOf/76Kac+blNW6zl5vn1j/hc5DaTRXpzfAYO+bv+zB0DOiq0nrgDVJcvgOK2J7W+7VEWErjUFMlNE5+C7uqkUc9Ljgq1D2GVqXjFHuGizGt8A/PNy1zcVCa+QJEb+Gxtu32p3+K8wcyIP1ngpYkqWfiZQziFSZW4b7O9GcZeSzBnpPQozc+9Ui+621Wm2RW3XkDoeMX//aHCMg5fLQ/WUMLn9TGSrAL7Oot79Kiar7agmm6HjqH/7NKJAUoZH1yyiiFdMPSoz0Mqr0+Hz9wm+YAtn97WMznoq1RjcN2Wh3FJFZNmCv21aeVdNWTDjKNVgTaAdu6V/MjFwdGaCsRru6ngedBDNb2vyiCadE3404tnE5G/Q7DMcFtI9ZgzgrPdwiW29ER5L1O2EwPgNla6IX+eBtmnhJXHuPH5f9CXU6Dyfc5Ut2dd9VSK6BZrtcKQNX5sox95/HzaV3GX/n/FQya0aVlW689yEGe9ZXvySnetkm5xPQh26+DGw5frA5mTWRYvZKvOQ3+/R57Pm43YWDjuOZ4yYTbI0KmzKcnLNvOLq6ls0FxA/Vt0ZN1IixC0PK9h7trtTtXlNIBk0fHZK0RUvCIkr61Ok7c1Nv0MCmJq81LKadhVCAKH1VpZuuTE20ulf8QH8/8v0OgmsQV9t9PDwFreAlHKfdtxPY09g32IPPGF1r9Toi8jtfCDxXdr9mDSyRv3Wnf5XrbjVtAM7pXr5hFAqPz2zWcJyvdG+7ZU334Bx/q79hneB+f7//1vQwAX+wd34n9rbNA7VKp8F/RQP/0FRccHg7mHQFeb3pXKVxGAKFPjyfB6MP295w86O8x+XdlQyVWaFP4VKT+5B7HFzGD/0OKf005AAAAAAA=="
+        type="image/x-icon">
+    <meta name="keywords"
+        content="ahmet, müzik, şekeroğlu, ahmet şekeroğlu, google music, google müzik, google music blogs, google müzik blogları, x09gy45, x9gy45">
+    <meta name="description"
+        content="Bu site Sezai Karakoç Anadolu Lisesi 10B öğrencisi 490 numaralı, Fatih Efe ÖZDEMİR tarafından HTML, CSS ve Javascript kullanılarak yapılmıştır. Çoğu şey poppuplara dayanmaktadır. ">
+</head>
+
+<body>
+    <div class="header-top">
+        <div class="header-top-left">
+            <span class="material-symbols-outlined" onclick="respSearchBoxOpenFunction()">
+                menu
+            </span>
+            <p>Google Music Blogs</p>
+        </div>
+        <div class="header-top-center">
+            <div class="search-box">
+                <span class="material-symbols-outlined">
+                    search
+                </span>
+                <input type="search" placeholder="Bir şeyler Arayın..">
+            </div>
+        </div>
+        <div class="header-top-right">
+            <span class="material-symbols-outlined" onclick="appsAcilPoppup()">
+                apps
+            </span>
+            <span class="material-symbols-outlined" onclick="dogrulaAcilPoppup()">
+                account_circle
+            </span>
+        </div>
+    </div>
+    <div class="header-bottom">
+        <ul>
+            <li><a href="" class="active">Anasayfa</a></li>
+            <li><a href="nasıl yapılır/nasil-yapilir.html" class="normal">Nasıl Çalışır?</a></li>
+        </ul>
+    </div>
+    <div class="body-container">
+        <div class="container-wrapper">
+            Sunumu görebilmek için doğrulayın <br><br><br>
+            <button onclick="dogrulaAcilPoppup()" class="google-white-button">Doğrula</button>
+        </div>
+        <div class="todo-list">
+            <h4>Doğrulanmadı</h4><br>
+            <div class="todo-list-item">
+                <span class="material-symbols-outlined" style="color: var(--blue);">
+                    library_books
+                </span>
+                <p>Doğrulanmadı</p>
+            </div>
+        </div>
+    </div>
+    <div class="dogrula-poppup" style="display:none;">
+        <div class="dp-container">
+            <div class="dpc-left">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/480px-Google_%22G%22_logo.svg.png"
+                    alt="google-logo" width="50">
+                <p class="baslik">Sunumu Doğrulayın</p>
+                <p style="width: 300px;">Birde Fazla Sunumu Tek Sayfa Göstermek İçin Doğrulama Kodları İle Ayıdık</p>
+            </div>
+            <div class="dpc-right">
+                <input type="text" class="google-input" placeholder="Sunum Anahtarını Girin"><br><br>
+                <br>
+                <div class="button-container">
+                    <button class="google-blue-button" onclick="dogrulaPoppup()">Sonraki</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="resp-search-box">
+        <div class="wrapper">
+            <div class="search-box">
+                <span class="material-symbols-outlined">
+                    search
+                </span>
+                <input type="search" placeholder="Bir şeyler Arayın..">
+            </div>
+        </div>
+        <br><br><br><br><br><br><br>
+        <span class="google-blue-button" style="cursor: pointer;" onclick="respSearchBoxCloseFunction()">Kapat</span>
+    </div>
+    <script src="doğuralama.js"></script>
+    <!-- buraya google apps'in html kodları gelecek -->
+    <div class="apps">
+        <div class="app-content">
+            <div class="app-content-item" onclick="appsKapatPoppup()">
+                <span class="material-symbols-outlined" style="font-size: 50px; cursor: pointer;">
+                    close
+                </span>
+            </div>
+            <div class="app-content-item">
+                <a href="https://www.google.com/?authuser=0">
+                    <img src="https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png
+                    " alt="">
+                    <p>Arama</p>
+                </a>
+            </div>
+            <div class="app-content-item">
+                <a href="https://business.google.com/?gmbsrc=ww-ww-ot-gs-z-gmb-l-z-h~z-ogb-u&authuser=0">
+                    <img src="https://cdn.worldvectorlogo.com/logos/google-my-business-logo.svg
+                    " alt="">
+                    <p>İşletme Pr... <!-- Profil Yöneticisi --></p>
+                </a>
+            </div>
+            <div class="app-content-item">
+                <a href="https://maps.google.com/?authuser=0">
+                    <img src="https://cdn.worldvectorlogo.com/logos/google-maps-2020-icon.svg
+                    " alt="">
+                    <p>Haritalar</p>
+                </a>
+            </div>
+            <div class="app-content-item">
+                <a href="https://www.youtube.com/?authuser=0">
+                    <img src="https://cdn.worldvectorlogo.com/logos/youtube-icon-5.svg
+                    " alt="">
+                    <p>Youtube</p>
+                </a>
+            </div>
+            <div class="app-content-item">
+                <a
+                    href="https://gemini.google.com/?authuser=0&utm_source=app_launcher&utm_medium=owned&utm_campaign=base">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThr7qrIazsvZwJuw-uZCtLzIjaAyVW_ZrlEQ&s
+                    " alt="">
+                    <p>Gemini<p>
+                </a>
+            </div>
+            <div class="app-content-item">
+                <a href="">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Google_News_icon.svg/1200px-Google_News_icon.svg.png
+                    " alt="">
+                    <p>Haberler</p>
+                </a>
+            </div>
+            <div class="app-content-item">
+                <a href="">
+                    <img src="https://cdn.worldvectorlogo.com/logos/official-gmail-icon-2020-.svg
+                    " alt="">
+                    <p>Gmail</p>
+                </a>
+            </div>
+            <div class="app-content-item">
+                <a href="">
+                    <img src="https://cdn.worldvectorlogo.com/logos/google-meet-icon-2020-.svg
+                    " alt="">
+                    <p>Meet<p>
+                </a>
+            </div>
+            <div class="app-content-item">
+                <a href="">
+                    <img src="data:image/png;base64,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
+                    " alt="">
+                    <p>Sohbet</p>
+                </a>
+            </div>
+            <div class="app-content-item">
+                <a href="">
+                    <img src="data:image/png;base64,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
+                    " alt="">
+                    <p>Kişiler<p>
+                </a>
+            </div>
+            <div class="app-content-item">
+                <a href="">
+                    <img src="https://cdn.worldvectorlogo.com/logos/new-logo-drive-google.svg
+                    " alt="">
+                    <p>Drive</p>
+                </a>
+            </div>
+            <div class="app-content-item">
+                <a href="">
+                    <img src="data:image/png;base64,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
+                    " alt="">
+                    <p>Takvim</p>
+                </a>
+            </div>
+            <div class="app-content-item">
+                <a href="">
+                    <img src="https://cdn.worldvectorlogo.com/logos/google-play-5.svg
+                    " alt="">
+                    <p>Play<p>
+                </a>
+            </div>
+            <div class="app-content-item">
+                <a href="">
+                    <img src="https://cdn.worldvectorlogo.com/logos/google-translate-logo.svg
+                    " alt="">
+                    <p>Çeviri</p>
+                </a>
+            </div>
+            <div class="app-content-item">
+                <a href="">
+                    <img src="https://cdn.worldvectorlogo.com/logos/google-photos-6.svg
+                    " alt="">
+                    <p>Fotograflar</p>
+                </a>
+            </div>
+            <div class="app-content-item">
+                <a href="">
+                    <img src="https://www.gstatic.com/myadcenter/logo/3c37071161daf097d22c76f6a4a2a61d.svg
+                    " alt="">
+                    <p>Reklam M... <p>
+                </a>
+            </div>
+            <div class="app-content-item">
+                <a href="">
+                    <img src="https://cdn.worldvectorlogo.com/logos/google-shopping.svg
+                    " alt="">
+                    <p>Alışveriş</p>
+                </a>
+            </div>
+
+        </div>
+        <div class="app-content">
+            <div class="app-content-item" onclick="appsKapatPoppup()">
+                <span class="material-symbols-outlined" style="font-size: 50px; cursor: pointer;">
+                    close
+                </span>
+            </div>
+            <div class="app-content-item">
+                <a href="https://www.google.com/?authuser=0">
+                    <img src="https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png
+                    " alt="">
+                    <p>Arama</p>
+                </a>
+            </div>
+            <div class="app-content-item">
+                <a href="https://business.google.com/?gmbsrc=ww-ww-ot-gs-z-gmb-l-z-h~z-ogb-u&authuser=0">
+                    <img src="https://cdn.worldvectorlogo.com/logos/google-my-business-logo.svg
+                    " alt="">
+                    <p>İşletme Pr... <!-- Profil Yöneticisi --></p>
+                </a>
+            </div>
+            <div class="app-content-item">
+                <a href="https://maps.google.com/?authuser=0">
+                    <img src="https://cdn.worldvectorlogo.com/logos/google-maps-2020-icon.svg
+                    " alt="">
+                    <p>Haritalar</p>
+                </a>
+            </div>
+            <div class="app-content-item">
+                <a href="https://www.youtube.com/?authuser=0">
+                    <img src="https://cdn.worldvectorlogo.com/logos/youtube-icon-5.svg
+                    " alt="">
+                    <p>Youtube</p>
+                </a>
+            </div>
+            <div class="app-content-item">
+                <a
+                    href="https://gemini.google.com/?authuser=0&utm_source=app_launcher&utm_medium=owned&utm_campaign=base">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThr7qrIazsvZwJuw-uZCtLzIjaAyVW_ZrlEQ&s
+                    " alt="">
+                    <p>Gemini<p>
+                </a>
+            </div>
+            <div class="app-content-item">
+                <a href="">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Google_News_icon.svg/1200px-Google_News_icon.svg.png
+                    " alt="">
+                    <p>Haberler</p>
+                </a>
+            </div>
+            <div class="app-content-item">
+                <a href="">
+                    <img src="https://cdn.worldvectorlogo.com/logos/official-gmail-icon-2020-.svg
+                    " alt="">
+                    <p>Gmail</p>
+                </a>
+            </div>
+            <div class="app-content-item">
+                <a href="">
+                    <img src="https://cdn.worldvectorlogo.com/logos/google-meet-icon-2020-.svg
+                    " alt="">
+                    <p>Meet<p>
+                </a>
+            </div>
+            <div class="app-content-item">
+                <a href="">
+                    <img src="data:image/png;base64,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
+                    " alt="">
+                    <p>Sohbet</p>
+                </a>
+            </div>
+            <div class="app-content-item">
+                <a href="">
+                    <img src="data:image/png;base64,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
+                    " alt="">
+                    <p>Kişiler<p>
+                </a>
+            </div>
+            <div class="app-content-item">
+                <a href="">
+                    <img src="https://cdn.worldvectorlogo.com/logos/new-logo-drive-google.svg
+                    " alt="">
+                    <p>Drive</p>
+                </a>
+            </div>
+            <div class="app-content-item">
+                <a href="">
+                    <img src="data:image/png;base64,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
+                    " alt="">
+                    <p>Takvim</p>
+                </a>
+            </div>
+            <div class="app-content-item">
+                <a href="">
+                    <img src="https://cdn.worldvectorlogo.com/logos/google-play-5.svg
+                    " alt="">
+                    <p>Play<p>
+                </a>
+            </div>
+            <div class="app-content-item">
+                <a href="">
+                    <img src="https://cdn.worldvectorlogo.com/logos/google-translate-logo.svg
+                    " alt="">
+                    <p>Çeviri</p>
+                </a>
+            </div>
+            <div class="app-content-item">
+                <a href="">
+                    <img src="https://cdn.worldvectorlogo.com/logos/google-photos-6.svg
+                    " alt="">
+                    <p>Fotograflar</p>
+                </a>
+            </div>
+            <div class="app-content-item">
+                <a href="">
+                    <img src="https://www.gstatic.com/myadcenter/logo/3c37071161daf097d22c76f6a4a2a61d.svg
+                    " alt="">
+                    <p>Reklam M... <p>
+                </a>
+            </div>
+            <div class="app-content-item">
+                <a href="">
+                    <img src="https://cdn.worldvectorlogo.com/logos/google-shopping.svg
+                    " alt="">
+                    <p>Alışveriş</p>
+                </a>
+            </div>
+
+        </div>
+        <br><br>
+        <a class="google-white2-button"
+            style="border-radius: 20px; display: flex;flex-direction: column; justify-content: center; text-align: center; margin: 0 60px;"
+            href="https://about.google/products">Google'ın Diğer Ürünleri</a>
+        <br><br>
+    </div>
+</body>
+
+</html>
