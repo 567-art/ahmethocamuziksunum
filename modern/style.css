@@ -80,7 +80,7 @@ header {
     color: #fff;
     border-bottom: 5px solid var(--green);
     box-shadow: 3px 1px 15px #fff;
-    p.baslik{
+    span.baslik{
         font-size: 2rem;
         color: var(--green);
         font-weight: bolder;
