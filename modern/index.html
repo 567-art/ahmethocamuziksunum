@@ -43,20 +43,8 @@
     </header>
     <main>
         <div class="container">
-            <p class="baslik">Lorem İpsum</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae corporis modi reiciendis saepe a
-                sunt unde quo neque odit. Saepe commodi sunt dolor ea inventore minima odit laudantium sint accusantium!
-                Quod nihil inventore, ratione vel earum veritatis ab minima placeat fugit quis, quidem quam illo commodi
-                necessitatibus porro. Tempore, modi sequi et aspernatur omnis ipsa! Reprehenderit nisi nostrum corporis
-                quam?
-                Amet cum quasi cupiditate quia ullam quidem, eius nulla omnis. Reprehenderit ipsum non repellat quo
-                praesentium rem atque et eum? Asperiores consequatur deserunt rem, est commodi ex optio quo voluptate!
-                Modi quis, esse voluptatem commodi recusandae eius aspernatur, soluta porro, fugit dicta ab! Ipsa
-                voluptates nostrum delectus fugiat sequi reiciendis, deleniti vero perferendis beatae voluptas ullam.
-                Soluta pariatur necessitatibus ex.
-                Libero natus vel eligendi omnis a, vero quidem accusantium iste dolores reprehenderit suscipit ipsa
-                quibusdam culpa nobis quae, facere incidunt similique facilis sed est praesentium numquam? Voluptatibus
-                error odio temporibus.</p>
+                        <span class="baslik">Sayfayı Değiştikçe Yazı Gelecek</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
     </main>
 
@@ -66,6 +54,117 @@
             <li><a href="">Anasayfa</a></li><br>
             <li><a href="../index.html" class="anti-active">Antimodern Sayfa</a></li>
         </ul>
+    </div>
+    
+    <div class="buttons-navigation">
+        <style>
+            .buttons-navigation {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 50px;
+
+                button.left {
+
+
+                    background-color: transparent;
+                    color: #000;
+                    border: none;
+                    font-size: 1rem;
+                    cursor: pointer;
+                    font-weight: bolder;
+                    border: 1px solid var(--green);
+                    color: var(--green);
+                    padding: 10px;
+                }
+
+                button.right {
+                    border: 1px solid var(--green);
+                    color: var(--green);
+                    padding: 10px;
+                    background-color: transparent;
+                    font-size: 1rem;
+                    cursor: pointer;
+                    font-weight: bolder;
+                }
+
+                button.page {
+                    color: var(--green);
+                    border: none;
+                    font-size: 2rem;
+                    font-weight: bolder;
+                    background-color: transparent;
+                }
+            }
+        </style>
+        <button class="left" onclick="Azalt()">
+            < </button>
+                <button class="page"> 1</button>
+                <button class="right" onclick="Arttir()"> > </button>
+                <script>
+                    let metins = [
+                        {
+                            baslik: "Başlık 1",
+                            metin: `
+                            
+                            <p>Lorem<p>
+                            `,
+                        }, {
+                            baslik: "Başlık 2",
+                            metin: `
+                
+                            <p>İpsum<p>
+                            `,
+                        }, {
+                            baslik: "Başlık 3",
+                            metin: `
+
+                            <p>Door<p>
+                            `,
+                        },
+                    ];
+                    let currentPage = 1;
+                    function Arttir() {
+
+                        if (metins.length == currentPage) {
+                            currentPage;
+                            
+                        } if (metins.length > currentPage) {
+                            currentPage++;
+                            
+                        }// Sayıyı 1 artır
+                        document.querySelector('.page').textContent = currentPage; // Sayıyı kontrol edip güncelle
+                        kontrolEt();
+                    }
+
+                    // Sayfayı azaltma fonksiyonu
+                    function Azalt() {
+                        if (currentPage > 1) { // Sayfa 1'den küçük olamaz
+                            currentPage--; // Sayıyı 1 azalt
+                        }
+                        document.querySelector('.page').textContent = currentPage;; // Sayıyı kontrol edip güncelle
+                        kontrolEt();
+                    }
+
+                    kontrolEt = () => {
+                        const baslik = document.querySelector(".container span.baslik");
+                        const metin = document.querySelector(".container p");
+                        if(currentPage == 1){
+                            baslik.textContent = metins[0].baslik; 
+                            metin.innerHTML = metins[0].metin; 
+                        }
+                        if(currentPage == 2){
+                            baslik.textContent = metins[1].baslik; 
+                            metin.innerHTML = metins[1].metin; 
+                        }
+                        if(currentPage == 3){
+                            baslik.textContent = metins[2].baslik; 
+                            metin.innerHTML = metins[2].metin; 
+                        }
+                    }
+
+                    
+                </script>
     </div>
 </body>
 
