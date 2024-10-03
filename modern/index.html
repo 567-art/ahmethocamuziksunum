@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmet Hocaya Müzik Sunum Modern Theme - 10B 490</title>
+    <meta name="keywords" content="müzik, music store">
+    <meta name="description" content="lFIB0wsJYZaIGB3gPSAuOCWqatCQZ0DehDCwzoY62gQ7XAwKqsZWqBIaDr8wMtMLB7M5apBcbl">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <a href="" class="logo">
+            <i class="fa-brands fa-youtube logo-img"></i>
+            <h3>MusicStore</h3>
+        </a>
+        <div class="h-center">
+            <ul>
+                <li><a href="">Anasayfa</a></li>
+                <li><a href="../index.html" class="anti-active">Antimodern Sayfa</a></li>
+            </ul>
+        </div>
+        <div class="h-right">
+            <i class="fa-solid fa-bars" style="color: var(--green);" onclick="acil()"></i>
+            <script>
+                acil = () => {
+                    const poppup = document.querySelector(".poppup");
+                    poppup.style.display = "block";
+                }
+
+                kapat = () => {
+                    const poppup = document.querySelector(".poppup");
+                    poppup.style.display = "none";
+                }
+            </script>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <p class="baslik">Lorem İpsum</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae corporis modi reiciendis saepe a
+                sunt unde quo neque odit. Saepe commodi sunt dolor ea inventore minima odit laudantium sint accusantium!
+                Quod nihil inventore, ratione vel earum veritatis ab minima placeat fugit quis, quidem quam illo commodi
+                necessitatibus porro. Tempore, modi sequi et aspernatur omnis ipsa! Reprehenderit nisi nostrum corporis
+                quam?
+                Amet cum quasi cupiditate quia ullam quidem, eius nulla omnis. Reprehenderit ipsum non repellat quo
+                praesentium rem atque et eum? Asperiores consequatur deserunt rem, est commodi ex optio quo voluptate!
+                Modi quis, esse voluptatem commodi recusandae eius aspernatur, soluta porro, fugit dicta ab! Ipsa
+                voluptates nostrum delectus fugiat sequi reiciendis, deleniti vero perferendis beatae voluptas ullam.
+                Soluta pariatur necessitatibus ex.
+                Libero natus vel eligendi omnis a, vero quidem accusantium iste dolores reprehenderit suscipit ipsa
+                quibusdam culpa nobis quae, facere incidunt similique facilis sed est praesentium numquam? Voluptatibus
+                error odio temporibus.</p>
+        </div>
+    </main>
+
+    <div class="poppup">
+        <i class="fa-solid fa-xmark" style="color: var(--green); display: flex; justify-content: end; cursor: pointer; font-size: 2rem;" onclick="kapat()"></i>
+        <ul><br>    
+            <li><a href="">Anasayfa</a></li><br>
+            <li><a href="../index.html" class="anti-active">Antimodern Sayfa</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>

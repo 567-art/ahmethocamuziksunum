@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    list-style: none;
+}
+
+a {
+    color: #fff;
+}
+
+:root {
+    --green: rgb(117, 191, 117);
+}
+
+body {
+    background-image: linear-gradient(rgb(0, 0, 0), rgb(20, 20, 20), rgb(40, 40, 40), rgb(30, 30, 30), rgb(20, 20, 20), rgb(10, 10, 10), rgb(0, 0, 0));
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+i.logo-img {
+    font-size: 50px;
+    color: var(--green);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10%;
+    align-items: center;
+
+    a.logo {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .h-center ul {
+        display: flex;
+        justify-content: space-around;
+        gap: 40px;
+    }
+
+    .h-right {
+        display: flex;
+        justify-content: space-around;
+        gap: 50px;
+    }
+
+    a.logo,
+    .h-center ul li a,
+    .h-right i {
+        cursor: pointer;
+    }
+
+    .h-center ul li a {
+        transition: 0.5s ease-in-out all;
+
+        &:hover {
+            border-bottom: 2px solid var(--green);
+            font-weight: bold;
+            color: var(--green);
+        }
+    }
+
+    .h-center ul li a.anti-active {
+        color: #ffffffc0;
+    }
+}
+
+.container {
+    margin: 50px 10%;
+    padding: 20px;
+    border: 1px solid var(--green);
+    border-radius: 0 20px 0 20px;
+    color: #fff;
+    border-bottom: 5px solid var(--green);
+    box-shadow: 3px 1px 15px #fff;
+    p.baslik{
+        font-size: 2rem;
+        color: var(--green);
+        font-weight: bolder;
+        padding: 20px 0;
+    }
+}
+
+
+@media (max-width: 590px){
+    header .h-center{
+        display: none;
+    }
+
+
+}
+
+.poppup ul li a {
+    transition: 0.5s ease-in-out all;
+
+    &:hover {
+        border-bottom: 2px solid var(--green);
+        font-weight: bold;
+        color: var(--green);
+    }
+}
+
+.poppup{
+    padding: 30px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    background-color: black;
+    height: 100vh;
+    display: none;
+}
